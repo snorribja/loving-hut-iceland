@@ -1,6 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import hero from "@/assets/hero-spread.jpg";
-import interior from "@/assets/interior.jpg";
+import interiorWide from "@/assets/Inside-1.jpg";
+import interiorTable from "@/assets/Inside-2.jpg";
+import saladSpread from "@/assets/DSC_5326.jpg";
+import noodlePlate from "@/assets/DSC_5385.jpg";
+import sandwichPlate from "@/assets/DSC_5463.jpg";
+import noodleSoup from "@/assets/DSC_5481.jpg";
+import tofuPlate from "@/assets/DSC_5493.jpg";
+import glazedPlate from "@/assets/DSC_5504.jpg";
 import { featuredImages } from "@/data/menu";
 
 export const Route = createFileRoute("/gallery")({
@@ -23,11 +30,18 @@ const items = [
   { src: hero, alt: "Loving Hut Iceland vegan food spread", span: "md:col-span-2 md:row-span-2" },
   { src: featuredImages.padthai, alt: "Vegan Pad Thai", span: "" },
   { src: featuredImages.pho, alt: "Vegan Pho soup", span: "" },
-  { src: interior, alt: "Restaurant interior", span: "md:col-span-2" },
+  { src: interiorWide, alt: "Loving Hut Iceland dining room", span: "md:col-span-2" },
+  { src: interiorTable, alt: "Dining table inside Loving Hut Iceland", span: "md:row-span-2" },
   { src: featuredImages.curry, alt: "Coconut curry with rice", span: "" },
   { src: featuredImages.burger, alt: "Vegan burger and fries", span: "" },
   { src: featuredImages.springrolls, alt: "Crispy spring rolls with peanut sauce", span: "" },
   { src: featuredImages.ricebowl, alt: "Bibimbap style rice bowl", span: "md:col-span-2" },
+  { src: saladSpread, alt: "Vegan salad and fresh rolls", span: "md:col-span-2 md:row-span-2" },
+  { src: noodlePlate, alt: "Vegetable noodle dish", span: "" },
+  { src: sandwichPlate, alt: "Vegan sandwich with fries", span: "" },
+  { src: noodleSoup, alt: "Noodle soup with tofu", span: "" },
+  { src: tofuPlate, alt: "Tofu and vegetables in dark sauce", span: "" },
+  { src: glazedPlate, alt: "Glazed vegan main course", span: "md:col-span-2" },
 ];
 
 function GalleryPage() {

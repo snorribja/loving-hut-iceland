@@ -5,17 +5,7 @@ import { restaurant } from "@/data/restaurant";
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-border bg-secondary/40">
-      <div className="container-page grid gap-10 py-14 md:grid-cols-4">
-        <div>
-          <div className="flex items-center gap-2 font-display text-lg font-extrabold">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground">♥</span>
-            Loving Hut <span className="text-primary">Iceland</span>
-          </div>
-          <p className="mt-3 text-sm text-muted-foreground">
-            100% vegan, Asian-inspired comfort food in central Reykjavík.
-          </p>
-        </div>
-
+      <div className="container-page grid gap-10 py-14 md:grid-cols-3">
         <div>
           <h4 className="text-sm font-bold uppercase tracking-wider text-foreground/70">Visit</h4>
           <p className="mt-3 flex items-start gap-2 text-sm">
@@ -64,7 +54,7 @@ export function Footer() {
       </div>
       <div className="border-t border-border/60">
         <div className="container-page flex flex-col items-start justify-between gap-2 py-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <p>© {new Date().getFullYear()} Loving Hut Iceland. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}. All rights reserved.</p>
           <div className="flex gap-4">
             <Link to="/menu" className="hover:text-foreground">Menu</Link>
             <Link to="/contact" className="hover:text-foreground">Contact</Link>

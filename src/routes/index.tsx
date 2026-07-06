@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, Clock, Coins, Phone, Leaf, Heart, Sparkles, Star } from "lucide-react";
 import heroImg from "@/assets/hero-spread.jpg";
-import interiorImg from "@/assets/interior.jpg";
+import interiorImg from "@/assets/Inside-1.jpg";
 import { menu, featuredImages } from "@/data/menu";
 import { restaurant } from "@/data/restaurant";
 
@@ -71,11 +71,10 @@ function Home() {
       </section>
 
       {/* QUICK INFO */}
-      <section className="container-page -mt-6 grid gap-4 pb-6 sm:grid-cols-3">
+      <section className="container-page -mt-6 grid gap-4 pb-6 sm:grid-cols-2">
         {[
           { icon: MapPin, title: "Location", body: "Laugavegur 164, 105 Reykjavík" },
           { icon: Clock, title: "Opening hours", body: "Mon–Sat 11:30–21:00 · Sun 16:00–21:00" },
-          { icon: Coins, title: "Price range", body: "≈ kr 2,000–4,000 per person" },
         ].map((c) => (
           <div key={c.title} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
             <div className="grid h-10 w-10 place-items-center rounded-full bg-primary/10 text-primary">
@@ -119,7 +118,7 @@ function Home() {
       <section className="bg-secondary/50">
         <div className="container-page grid gap-12 py-20 md:grid-cols-2 md:items-center">
           <div className="overflow-hidden rounded-3xl">
-            <img src={interiorImg} alt="Loving Hut Iceland restaurant interior" loading="lazy" width={1400} height={1000} className="h-full w-full object-cover" />
+            <img src={interiorImg} alt="Loving Hut Iceland restaurant interior" loading="lazy" width={450} height={300} className="h-full w-full object-cover" />
           </div>
           <div>
             <span className="text-xs font-semibold uppercase tracking-widest text-primary">Why Loving Hut</span>

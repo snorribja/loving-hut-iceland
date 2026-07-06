@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/loving-hut-logo-transparent.webp";
 import { restaurant } from "@/data/restaurant";
 
 const links = [
@@ -16,11 +17,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
       <nav className="container-page flex h-16 items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-extrabold tracking-tight">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground">
-            <span className="text-base">♥</span>
-          </span>
-          <span>Loving Hut <span className="text-primary">Iceland</span></span>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt={restaurant.name} width={1631} height={462} className="h-12 w-auto max-w-[210px]" />
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">

@@ -24,7 +24,7 @@ function ContactPage() {
           <span className="text-xs font-semibold uppercase tracking-widest text-primary">Contact</span>
           <h1 className="mt-2 font-display text-5xl font-extrabold md:text-6xl">Come say hi.</h1>
           <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
-            We're on Laugavegur, the main street of Reykjavík. Walk-ins welcome. Free parking available (Frítt bílastæði).
+            We're on Laugavegur, the main street of Reykjavík. Walk-ins welcome. Free parking available.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ function ContactPage() {
 
             <div className="flex items-center gap-3 rounded-2xl bg-secondary/60 p-4 text-sm">
               <Car className="h-5 w-5 shrink-0 text-primary" />
-              <span><strong>Free parking</strong> available (Frítt bílastæði).</span>
+              <span><strong>Free parking</strong> available.</span>
             </div>
           </div>
 

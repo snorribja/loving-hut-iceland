@@ -21,7 +21,7 @@ export const restaurant = {
   rating: { google: 4.7, googleCount: 468, tripadvisor: 4.7, tripCount: 60 },
   social: {
     instagram: "https://www.instagram.com/lovinghuticeland/",
-    facebook: "https://www.facebook.com/lovinghuticeland/",
+    facebook: "https://www.facebook.com/LHIceland/",
   },
   mapsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=Loving+Hut+Iceland+Laugavegur+164+Reykjavik",

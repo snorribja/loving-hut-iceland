@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Leaf, Heart, Coins, Sparkles, MapPin, Users } from "lucide-react";
-import interiorImg from "@/assets/interior.jpg";
+import interiorImg from "@/assets/Inside-1.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -38,7 +38,7 @@ function AboutPage() {
             </p>
           </div>
           <div className="overflow-hidden rounded-3xl shadow-xl">
-            <img src={interiorImg} alt="Loving Hut Iceland interior" loading="lazy" width={1400} height={1000} className="h-full w-full object-cover" />
+            <img src={interiorImg} alt="Loving Hut Iceland interior" loading="lazy" width={450} height={300} className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
