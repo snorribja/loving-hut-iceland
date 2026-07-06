@@ -9,6 +9,7 @@ export default defineConfig({
     tsConfigPaths(),
     tailwindcss(),
     tanstackStart({
+      prerender: { enabled: true },
       server: { entry: "server" },
     }),
     viteReact(),
