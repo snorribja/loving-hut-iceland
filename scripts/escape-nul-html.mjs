@@ -21,7 +21,8 @@ for await (const file of htmlFiles(root)) {
   const html = await readFile(file, "utf8");
   if (!html.includes("\0")) continue;
 
-  await writeFile(file, html.replaceAll("\0", "\\u0000"));
+  // TanStack hydration maps U+FFFD back to "/" for SSR match IDs.
+  await writeFile(file, html.replaceAll("\0", "\\uFFFD"));
   changed += 1;
 }
 
